@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Page with Centered Form</title>
+</head>
+<body>
+    <center>
+        <header>
+            <h1>Welcome to My Enhanced HTML5 Page</h1>
+            <p>This page demonstrates the use of HTML5 elements including lists, tables, embedded media, and a fully accessible and validated form.</p>
+        </header>
+
+        <section>
+            <h2>Front-end Programming Languages</h2>
+            <ol style="display: inline-block; text-align: left;">
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>HTML &amp; CSS</li>
+            </ol>
+
+            <h3>Essential Web Development Tools</h3>
+            <ul style="display: inline-block; text-align: left;">
+                <li>Visual Studio Code</li>
+                <li>Git &amp; GitHub</li>
+                <li>Chrome DevTools</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Schedule Overview</h2>
+            <table border="1" cellpadding="8" cellspacing="0" width="80%" align="center">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Topic</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML5 Basics</td>
+                        <td>2 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>CSS Styling</td>
+                        <td>3 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>JavaScript Fundamentals</td>
+                        <td>4 hours</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Media Showcase</h2>
+            <p>Below are some examples of embedded media:</p>
+            <h3>Sample Image</h3>
+            <img src="m.jpg" width="80%" />
+
+            <h3>Sample Audio</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Sample Video</h3>
+            <video width="80%" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section>
+            <h2>Contact &amp; Feedback Form</h2>
+            <form action="#" method="post">
+                <fieldset style="width:80%; text-align:left;">
+                    <legend>Personal Information</legend>
+                    <label for="fullname">Full Name *</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Jane Doe" required minlength="3" autocomplete="name" /><br><br>
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" /><br><br>
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254-715-678-900" pattern="[+][0-9]{1,3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" /><br><br>
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" />
+                </fieldset>
+
+                <fieldset style="width:80%; text-align:left;">
+                    <legend>Survey</legend>                 <label for="experience">How would you rate your HTML experience? *</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">-- Select --</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="5" placeholder="Write your feedback..."></textarea>
+                </fieldset>
+
+                <fieldset style="width:80%; text-align:left;">
+                    <legend>Preferences</legend>
+                    <label>
+                        <input type="checkbox" name="subscribe" checked readonly />
+                        Subscribe to newsletter (mandatory)
+                    </label>
+
+                    <label for="website">Your Website (optional)</label>
+                    <input type="url" id="website" name="website" placeholder="https://your-site.com" pattern="https?://.*" /><br>
+                </fieldset><br>
+
+                <div>
+                    <input type="submit" value="Submit Form" />
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Enhanced HTML5 Page. All rights reserved.</p>
+        </footer>
+    </center>
+</body>
+</html>
